@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Z ruler",
+  "description": "this extension will allow you to measure page in px",
+  "version": "0.1.0",
+
+  "browser_action": {
+    "default_icon": "ruler.png"
+  },
+  "background": {
+    "scripts": ["index.js"]
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}

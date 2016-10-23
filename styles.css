@@ -1,0 +1,41 @@
+.zruler-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: 999999999;
+}
+
+.zruler-ruler {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  outline: 1px dashed rgba(255, 255, 255, 0.7);
+  outline-offset: -1px;
+  z-index: 9999999999;
+}
+
+.zruler-ruler:after, .zruler-ruler:before {
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  position: absolute;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.zruler-ruler:after {
+  content: attr(data-width)'px';
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -110%);
+}
+
+.zruler-ruler:before {
+  content: attr(data-height)'px';
+  left: 0;
+  top: 50%;
+  transform: translate(-110%, -50%);
+}
