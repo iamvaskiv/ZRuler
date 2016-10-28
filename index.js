@@ -1,6 +1,6 @@
 chrome.browserAction.onClicked.addListener(function(tab) {
   chrome.tabs.executeScript({
-    file: 'ruler.js'
+    file: 'app.js'
   });
 
   chrome.tabs.insertCSS({
